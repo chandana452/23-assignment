@@ -1,0 +1,31 @@
+public class Division
+{
+    public static void main(String args[])
+    {
+        int mark[] = new int[5];
+     //declare variables
+        int s;
+        float add=0, avg;
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        System.out.print("Enter Marks Obtained in 5 Subjects : ");
+        for(s=0; s<5; s++)
+        {
+            mark[s] = scan.nextInt();
+            add = add + mark[s];
+        }
+        avg = add/5;	
+        System.out.print("Your Grade is ");
+        if(avg>80)
+        {
+            System.out.print("First Class");
+        }
+        else if(avg>60 && avg<=80)
+        {
+            System.out.print("Second Class");
+        }
+        else if(avg>40 && avg<=60)
+        {
+            System.out.print("Third Class");
+        }
+    }
+}
