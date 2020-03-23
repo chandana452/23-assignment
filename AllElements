@@ -1,0 +1,23 @@
+import java.io.*;
+public class AllElements { 
+    // Print array elements greater than average 
+    static void printAboveAvg(int arr[], int n) 
+    { 
+        // Find average 
+        double avg = 0; 
+        for (int p = 0; p < n; p++)  
+            avg += arr[p];  
+        avg = avg / n; 
+        // Print elements greater than average 
+        for (int p = 0; p < n; p++)  
+            if (arr[p] > avg)  
+                System.out.print(arr[p] + " "); 
+    } 
+    // Driver program  
+    public static void main (String[] args) 
+    { 
+        int arr[] = { 1,3,7,8,5,13 }; 
+        int a = arr.length; 
+        printAboveAvg(arr, a);     
+    } 
+}
