@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class ArithematicOperation 
+{
+                private static Scanner s1;
+		public static void main(String[] args) 
+		{
+           //declare variables
+			int Size, p;
+			s1 = new Scanner(System.in);
+		 
+	System.out.print(" Please Enter Number of elements in an array : ");
+			Size = s1.nextInt();	
+			
+			int [] c = new int[Size];
+			int [] d = new int[Size];
+			int [] Addition = new int[Size];
+			int [] Subtraction = new int[Size];
+			int [] Multiplication = new int[Size];
+			int [] Division = new int[Size];
+			
+	System.out.print(" Please Enter " + Size + " elements of an Array  : ");
+			for (p = 0; p < Size; p++)
+			{
+				c[p] = s1.nextInt();
+			}   
+	System.out.print(" Please Enter " + Size + " elements of an Array  : ");
+			for (p = 0; p < Size; p++)
+			{
+				d[p] = s1.nextInt();
+			}  
+			for(p = 0; p < Size; p ++)
+			{
+				Addition [p]= c[p] + d[p];
+			    Subtraction [p]= c[p] - d[p];
+			    Multiplication [p]= c[p] * d[p];
+			    Division [p]= c[p] / d[p];
+			  
+			}
+			System.out.println("\nAdd\t Sub\t Multi\t Div\t Mod");
+			for (p = 0; p < Size; p++)
+			{
+				System.out.print(Addition[p] + " \t ");
+				System.out.print(Subtraction[p] + " \t ");
+				System.out.print(Multiplication[p] + " \t ");
+				System.out.print(Division[p] + " \t ");
+			 
+			    System.out.print("\n");
+			}
+		}
+	}
